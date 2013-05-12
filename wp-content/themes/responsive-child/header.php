@@ -65,8 +65,12 @@ if ( !defined('ABSPATH')) exit;
 	<?php if ( get_header_image() != '' ) : ?>
                
         <div id="logo">
-            <a href="<?php echo home_url('/'); ?>">Closet Therapy</a>
+            <a href="<?php echo home_url('/'); ?>"><span class="logo-closet">Closet</span> <span class="logo-therapy">Therapy</span></a>
         </div><!-- end of #logo -->
+
+        <div class="hanger">
+        	<img src='/wp-content/uploads/2013/05/hanger_edit.png' />
+        </div>
         
     <?php endif; // header image was removed ?>
 

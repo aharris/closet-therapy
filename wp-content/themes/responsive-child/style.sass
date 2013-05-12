@@ -1,23 +1,139 @@
-
-/*!	Theme Name:     Responsive Child
-	Theme URI:      http://example.com/
-	Description:    Child theme for the responsive theme
-	Author:         Ashton Harris
-	Author URI:     http://ashtonharris.me
-	Template:       responsive                            
-	Version:        1.9.3.1*/
+/*! Theme Name:     Responsive Child
+  Theme URI:      http://example.com/
+  Description:    Child theme for the responsive theme
+  Author:         Ashton Harris
+  Author URI:     http://ashtonharris.me
+  Template:       responsive                            
+  Version:        1.9.3.1*/
 
 @import url("../responsive/style.css")
 @import compass/css3
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400)
+@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic|Diplomata)
 @import breakpoint
 
-// body
-// 	+background(linear-gradient(#320809, #af3250))
-// 	color: #fff
-// 	font-size: 14px
-// 	text-align: center
-// 	font-family: 'Open Sans', sans-serif
-// 	border-top: 1em solid #000
-// 	border-bottom: 1em solid #000
-// 	padding: 3em 1em
+//BREAKPOINTS ----------------
+$extra-small: max-width 320px
+$small: max-width 650px
+$medium: 651px
+$large: 980px
+
+//VARIABLES ------------------
+$dark-red: #b83253
+$medium-red: #d17b91
+$light-red: #efd1d8
+
+//DEFAULT STYLES -------------
+
+body
+  background: $dark-red url('/wp-content/uploads/2013/05/sneaker_mesh_fabric.jpg')
+
+#container
+  background: #fff
+  padding: .5em
+  +box-sizing(border-box)
+  // background-image: url('/wp-content/uploads/2013/05/hanger.png')
+
+#header
+  padding: 1em 0
+  +background(linear-gradient(lighten($dark-red, 30%), #fff))
+  +box-sizing(border-box)
+
+#logo
+  margin: 1em 1em 2em
+  a
+    color: darken($dark-red, 10%)
+    font-weight: 700
+    font-size: 2.5em
+    &:hover, &:active
+      color: darken($dark-red, 20%)
+
+.logo-closet
+  font-family: 'Diplomata', cursive
+
+.logo-therapy
+  font-family: 'Sorts Mill Goudy', serif
+  font-size: 0.8em
+  // text-transform: uppercase
+
+.hanger
+  position: relative
+  float: right
+  margin-top: -42px
+  margin-right: 10px
+  height: 0
+  z-index: 1
+
+.menu
+  +background(none)
+  a
+    color: #000
+    font-weight: 400
+    text-shadow: none
+    line-height: inherit
+    height: auto
+
+//CONTENT -----------------------
+#featured
+  border: none
+  p
+    text-align: left
+    padding: 0 20px
+
+.content-image
+  max-width: 50%
+  +border-radius(10px)
+  +breakpoint($extra-small)
+    float: none
+    margin: 0 auto
+    display: block
+
+
+//BREAKPOINTS -------------------
+
++breakpoint($small)
+  .hanger
+    display: none
+  .js
+    .main-nav
+      +background(linear-gradient($dark-red, darken($dark-red, 10%)))
+      .menu
+        .current_page_item
+          a
+            background-color: $medium-red
+            color: #fff
+            &:hover, &:active
+              background-color: $medium-red !important
+        li
+          a
+            background-color: $light-red
+            font-weight: bold
+            &:hover, &:active
+              background-color: $medium-red !important
+
+
++breakpoint($medium)
+  #container
+    margin: 1em
+    +box-shadow(0 0 20px 0 #000)
+  #logo
+    a
+      font-size: 3em
+  #header
+    padding: 1em
+
+
++breakpoint($large)
+  #container
+    margin: 2em auto
+    +border-radius(20px)
+    +box-shadow(0 0 20px 0 #000)
+  #header
+    +border-radius(14px)
+  .featured-title
+    text-align: left
+    padding: 40px 20px 0
+  .featured-subtitle
+    text-align: left
+    padding: 0 20px
+  .hanger
+    margin-right: 40px

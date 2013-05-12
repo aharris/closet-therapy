@@ -1,9 +1,205 @@
 @import url("../responsive/style.css");
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400);
-/*	Theme Name:     Responsive Child
+@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic|Diplomata);
+/* Theme Name:     Responsive Child
  * Theme URI:      http://example.com/
  * Description:    Child theme for the responsive theme
  * Author:         Ashton Harris
  * Author URI:     http://ashtonharris.me
  * Template:       responsive                            
  * Version:        1.9.3.1 */
+/* line 27, style.sass */
+body {
+  background: #b83253 url("/wp-content/uploads/2013/05/sneaker_mesh_fabric.jpg");
+}
+
+/* line 30, style.sass */
+#container {
+  background: white;
+  padding: 0.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 36, style.sass */
+#header {
+  padding: 1em 0;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e59eb0), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(#e59eb0, #ffffff);
+  background: -moz-linear-gradient(#e59eb0, #ffffff);
+  background: -o-linear-gradient(#e59eb0, #ffffff);
+  background: linear-gradient(#e59eb0, #ffffff);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 41, style.sass */
+#logo {
+  margin: 1em 1em 2em;
+}
+/* line 43, style.sass */
+#logo a {
+  color: #902741;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+/* line 47, style.sass */
+#logo a:hover, #logo a:active {
+  color: #681c2f;
+}
+
+/* line 50, style.sass */
+.logo-closet {
+  font-family: "Diplomata", cursive;
+}
+
+/* line 53, style.sass */
+.logo-therapy {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 0.8em;
+}
+
+/* line 58, style.sass */
+.hanger {
+  position: relative;
+  float: right;
+  margin-top: -42px;
+  margin-right: 10px;
+  height: 0;
+  z-index: 1;
+}
+
+/* line 66, style.sass */
+.menu {
+  background: none;
+}
+/* line 68, style.sass */
+.menu a {
+  color: black;
+  font-weight: 400;
+  text-shadow: none;
+  line-height: inherit;
+  height: auto;
+}
+
+/* line 76, style.sass */
+#featured {
+  border: none;
+}
+/* line 78, style.sass */
+#featured p {
+  text-align: left;
+  padding: 0 20px;
+}
+
+/* line 82, style.sass */
+.content-image {
+  max-width: 50%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+@media (max-width: 320px) {
+  /* line 82, style.sass */
+  .content-image {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  /* line 94, style.sass */
+  .hanger {
+    display: none;
+  }
+
+  /* line 97, style.sass */
+  .js .main-nav {
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b83253), color-stop(100%, #902741));
+    background: -webkit-linear-gradient(#b83253, #902741);
+    background: -moz-linear-gradient(#b83253, #902741);
+    background: -o-linear-gradient(#b83253, #902741);
+    background: linear-gradient(#b83253, #902741);
+  }
+  /* line 101, style.sass */
+  .js .main-nav .menu .current_page_item a {
+    background-color: #d17b91;
+    color: white;
+  }
+  /* line 104, style.sass */
+  .js .main-nav .menu .current_page_item a:hover, .js .main-nav .menu .current_page_item a:active {
+    background-color: #d17b91 !important;
+  }
+  /* line 107, style.sass */
+  .js .main-nav .menu li a {
+    background-color: #efd1d8;
+    font-weight: bold;
+  }
+  /* line 110, style.sass */
+  .js .main-nav .menu li a:hover, .js .main-nav .menu li a:active {
+    background-color: #d17b91 !important;
+  }
+}
+@media (min-width: 651px) {
+  /* line 115, style.sass */
+  #container {
+    margin: 1em;
+    -webkit-box-shadow: 0 0 20px 0 black;
+    -moz-box-shadow: 0 0 20px 0 black;
+    box-shadow: 0 0 20px 0 black;
+  }
+
+  /* line 119, style.sass */
+  #logo a {
+    font-size: 3em;
+  }
+
+  /* line 121, style.sass */
+  #header {
+    padding: 1em;
+  }
+}
+@media (min-width: 980px) {
+  /* line 126, style.sass */
+  #container {
+    margin: 2em auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 20px 0 black;
+    -moz-box-shadow: 0 0 20px 0 black;
+    box-shadow: 0 0 20px 0 black;
+  }
+
+  /* line 130, style.sass */
+  #header {
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    border-radius: 14px;
+  }
+
+  /* line 132, style.sass */
+  .featured-title {
+    text-align: left;
+    padding: 40px 20px 0;
+  }
+
+  /* line 135, style.sass */
+  .featured-subtitle {
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  /* line 138, style.sass */
+  .hanger {
+    margin-right: 40px;
+  }
+}
