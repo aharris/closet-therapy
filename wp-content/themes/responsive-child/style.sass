@@ -3,7 +3,7 @@
   Description:    Child theme for the responsive theme
   Author:         Ashton Harris
   Author URI:     http://ashtonharris.me
-  Template:       responsive                            
+  Template:       responsive
   Version:        1.9.3.1*/
 
 @import url("../responsive/style.css")
@@ -21,6 +21,9 @@ $large: 980px
 $dark-red: #b83253
 $medium-red: #d17b91
 $light-red: #efd1d8
+
+$green: #32b871
+$grey: #3b3b3b
 
 //DEFAULT STYLES -------------
 
@@ -52,7 +55,6 @@ body
 .logo-therapy
   font-family: 'Sorts Mill Goudy', serif
   font-size: 0.8em
-  // text-transform: uppercase
 
 .hanger
   position: relative
@@ -127,7 +129,33 @@ p
 #content-full
   margin-top: 0
 
+.rate-container
+  +box-shadow(2px 2px 8px 0 black)
+  +border-radius(12px)
+  margin-bottom: 2em
+  h2
+    background: $green
+    color: #fff
+    padding: 10px
+    margin: 0
+    +border-radius(10px 10px 0 0)
+
+.ticket-content
+  background: $grey
+  color: #fff
+  padding: 20px
+  margin: 0
+  +border-radius(0 0 10px 10px)
+
+
+
 //BREAKPOINTS -------------------
+
++breakpoint($extra-small)
+  #container
+    padding: 0
+  #featured p
+    font-size: 18px
 
 +breakpoint($small)
   .hanger
@@ -159,6 +187,11 @@ p
       font-size: 3em
   #header
     padding: 1em
+  .rate-container
+    margin: 0 2%
+    width: 45%
+    +inline-block
+    vertical-align: top
 
 
 +breakpoint($large)
