@@ -116,6 +116,8 @@ p
     text-align: left
     padding: 0 20px
 
+//IMAGES ----------------------
+
 .content-image
   max-width: 50%
   +border-radius(10px)
@@ -123,6 +125,11 @@ p
     float: none
     margin: 0 auto
     display: block
+
+.gallery .gallery-item
+  margin: 1em
+  img.attachment-thumbnail
+    +border-radius(5px)
 
 #wrapper
   border: none
@@ -147,6 +154,8 @@ p
   padding: 20px
   margin: 0
   +border-radius(0 0 10px 10px)
+
+
 
 
 
@@ -184,12 +193,13 @@ p
     margin: 1em
     +box-shadow(0 0 20px 0 #000)
   #logo
+    margin: 2em 1em 3em
     a
-      font-size: 3em
+      font-size: 4em
   #header
     padding: 1em
   .rate-container
-    margin: 0 2%
+    margin: 0 2% 2em
     width: 45%
     +inline-block
     vertical-align: top

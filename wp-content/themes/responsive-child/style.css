@@ -142,7 +142,7 @@ p {
   padding: 0 20px;
 }
 
-/* line 119, style.sass */
+/* line 121, style.sass */
 .content-image {
   max-width: 50%;
   -webkit-border-radius: 10px;
@@ -152,7 +152,7 @@ p {
   border-radius: 10px;
 }
 @media (max-width: 320px) {
-  /* line 119, style.sass */
+  /* line 121, style.sass */
   .content-image {
     float: none;
     margin: 0 auto;
@@ -160,17 +160,30 @@ p {
   }
 }
 
-/* line 127, style.sass */
+/* line 129, style.sass */
+.gallery .gallery-item {
+  margin: 1em;
+}
+/* line 131, style.sass */
+.gallery .gallery-item img.attachment-thumbnail {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 134, style.sass */
 #wrapper {
   border: none;
 }
 
-/* line 130, style.sass */
+/* line 137, style.sass */
 #content-full {
   margin-top: 0;
 }
 
-/* line 133, style.sass */
+/* line 140, style.sass */
 .rate-container {
   -webkit-box-shadow: 2px 2px 8px 0 black;
   -moz-box-shadow: 2px 2px 8px 0 black;
@@ -182,7 +195,7 @@ p {
   border-radius: 12px;
   margin-bottom: 2em;
 }
-/* line 137, style.sass */
+/* line 144, style.sass */
 .rate-container h2 {
   background: #32b871;
   color: white;
@@ -195,7 +208,7 @@ p {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 144, style.sass */
+/* line 151, style.sass */
 .ticket-content {
   background: #3b3b3b;
   color: white;
@@ -209,23 +222,23 @@ p {
 }
 
 @media (max-width: 320px) {
-  /* line 156, style.sass */
+  /* line 165, style.sass */
   #container {
     padding: 0;
   }
 
-  /* line 158, style.sass */
+  /* line 167, style.sass */
   #featured p {
     font-size: 18px;
   }
 }
 @media (max-width: 650px) {
-  /* line 162, style.sass */
+  /* line 171, style.sass */
   .hanger {
     display: none;
   }
 
-  /* line 165, style.sass */
+  /* line 174, style.sass */
   .js .main-nav {
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b83253), color-stop(100%, #902741));
     background: -webkit-linear-gradient(#b83253, #902741);
@@ -233,27 +246,27 @@ p {
     background: -o-linear-gradient(#b83253, #902741);
     background: linear-gradient(#b83253, #902741);
   }
-  /* line 169, style.sass */
+  /* line 178, style.sass */
   .js .main-nav .menu .current_page_item a {
     background-color: #d17b91;
     color: white;
   }
-  /* line 172, style.sass */
+  /* line 181, style.sass */
   .js .main-nav .menu .current_page_item a:hover, .js .main-nav .menu .current_page_item a:active {
     background-color: #d17b91 !important;
   }
-  /* line 175, style.sass */
+  /* line 184, style.sass */
   .js .main-nav .menu li a {
     background-color: #efd1d8;
     font-weight: bold;
   }
-  /* line 178, style.sass */
+  /* line 187, style.sass */
   .js .main-nav .menu li a:hover, .js .main-nav .menu li a:active {
     background-color: #d17b91 !important;
   }
 }
 @media (min-width: 651px) {
-  /* line 183, style.sass */
+  /* line 192, style.sass */
   #container {
     margin: 1em;
     -webkit-box-shadow: 0 0 20px 0 black;
@@ -261,19 +274,23 @@ p {
     box-shadow: 0 0 20px 0 black;
   }
 
-  /* line 187, style.sass */
+  /* line 195, style.sass */
+  #logo {
+    margin: 2em 1em 3em;
+  }
+  /* line 197, style.sass */
   #logo a {
-    font-size: 3em;
+    font-size: 4em;
   }
 
-  /* line 189, style.sass */
+  /* line 199, style.sass */
   #header {
     padding: 1em;
   }
 
-  /* line 191, style.sass */
+  /* line 201, style.sass */
   .rate-container {
-    margin: 0 2%;
+    margin: 0 2% 2em;
     width: 45%;
     display: -moz-inline-stack;
     display: inline-block;
@@ -285,7 +302,7 @@ p {
   }
 }
 @media (min-width: 980px) {
-  /* line 199, style.sass */
+  /* line 209, style.sass */
   #container {
     margin: 2em auto;
     -webkit-border-radius: 20px;
@@ -298,7 +315,7 @@ p {
     box-shadow: 0 0 20px 0 black;
   }
 
-  /* line 203, style.sass */
+  /* line 213, style.sass */
   #header {
     -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
@@ -307,18 +324,18 @@ p {
     border-radius: 14px;
   }
 
-  /* line 205, style.sass */
+  /* line 215, style.sass */
   .featured-title {
     text-align: left;
   }
 
-  /* line 208, style.sass */
+  /* line 218, style.sass */
   .featured-subtitle {
     text-align: left;
     padding: 0 20px;
   }
 
-  /* line 211, style.sass */
+  /* line 221, style.sass */
   .hanger {
     margin-right: 40px;
   }
