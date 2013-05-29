@@ -26,10 +26,16 @@ $light-red: #efd1d8
 $green: #32b871
 $grey: #3b3b3b
 
+//FONTS ----------------------
+$h1-font: 'Shadows Into Light Two', cursive
+$h2-font: 'Over the Rainbow', cursive
+$body-font: 'Shadows Into Light Two', cursive
+
 //DEFAULT STYLES -------------
 
 body
   background: $dark-red url('/wp-content/uploads/2013/05/sneaker_mesh_fabric.jpg')
+  font-family: $body-font
 
 #container
   background: #fff
@@ -51,10 +57,10 @@ body
       color: darken($dark-red, 20%)
 
 .logo-closet
-  font-family: 'Shadows Into Light Two', cursive
+  font-family: $h1-font
 
 .logo-therapy
-  font-family: 'Over the Rainbow', cursive
+  font-family: $h2-font
   font-size: 0.8em
 
 .hanger
@@ -108,6 +114,7 @@ p
   font-size: 1.875em
   margin-top: .857em
   margin-top: .857em
+  font-family: $h2-font
 
 
 #featured
