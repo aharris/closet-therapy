@@ -1,5 +1,5 @@
 @import url("../responsive/style.css");
-@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Over+the+Rainbow);
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Over+the+Rainbow|Fresca);
 /* Theme Name:     Responsive Child
  * Theme URI:      http://example.com/
  * Description:    Child theme for the responsive theme
@@ -10,10 +10,11 @@
 /* line 36, style.sass */
 body {
   background: #b83253 url("/wp-content/uploads/2013/05/sneaker_mesh_fabric.jpg");
-  font-family: "Shadows Into Light Two", cursive;
+  font-family: "Fresca", sans-serif;
+  font-weight: 700;
 }
 
-/* line 40, style.sass */
+/* line 41, style.sass */
 #container {
   background: white;
   padding: 0.5em;
@@ -22,7 +23,7 @@ body {
   box-sizing: border-box;
 }
 
-/* line 45, style.sass */
+/* line 46, style.sass */
 #header {
   padding: 1em 0;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e59eb0), color-stop(100%, #ffffff));
@@ -35,33 +36,33 @@ body {
   box-sizing: border-box;
 }
 
-/* line 50, style.sass */
+/* line 51, style.sass */
 #logo {
   margin: 1em 1em 2em;
 }
-/* line 52, style.sass */
+/* line 53, style.sass */
 #logo a {
   color: #902741;
   font-weight: 700;
   font-size: 2.5em;
 }
-/* line 56, style.sass */
+/* line 57, style.sass */
 #logo a:hover, #logo a:active {
   color: #681c2f;
 }
 
-/* line 59, style.sass */
+/* line 60, style.sass */
 .logo-closet {
   font-family: "Shadows Into Light Two", cursive;
 }
 
-/* line 62, style.sass */
+/* line 63, style.sass */
 .logo-therapy {
   font-family: "Over the Rainbow", cursive;
   font-size: 0.8em;
 }
 
-/* line 66, style.sass */
+/* line 67, style.sass */
 .hanger {
   position: relative;
   float: right;
@@ -71,54 +72,55 @@ body {
   z-index: 1;
 }
 
-/* line 74, style.sass */
+/* line 75, style.sass */
 .menu {
   background: none;
 }
-/* line 76, style.sass */
+/* line 77, style.sass */
 .menu a {
   color: #343434;
   font-weight: 400;
   text-shadow: none;
   line-height: inherit;
   height: auto;
+  font-size: 18px;
 }
-/* line 82, style.sass */
+/* line 84, style.sass */
 .menu a:hover {
   background: none;
   color: #343434;
 }
 
-/* line 86, style.sass */
+/* line 88, style.sass */
 ul.menu > li:hover {
   background: none;
   color: #343434;
 }
 
-/* line 90, style.sass */
+/* line 92, style.sass */
 .current-menu-item a {
   font-weight: bold;
 }
 
-/* line 95, style.sass */
+/* line 97, style.sass */
 .menu .current_page_item a, .menu .current-menu-item a {
   background: none;
 }
 
-/* line 99, style.sass */
+/* line 101, style.sass */
 #content {
   margin-top: 0;
 }
 
-/* line 101, style.sass */
+/* line 103, style.sass */
 p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 200;
   line-height: 27px;
   text-align: left;
 }
 
-/* line 107, style.sass */
+/* line 109, style.sass */
 .featured-title {
   font-size: 2.625em;
   margin-bottom: 0.5em;
@@ -126,7 +128,7 @@ p {
   padding: 0px 20px 0;
 }
 
-/* line 113, style.sass */
+/* line 115, style.sass */
 .featured-subtitle {
   font-size: 1.875em;
   margin-top: 0.857em;
@@ -134,17 +136,18 @@ p {
   font-family: "Over the Rainbow", cursive;
 }
 
-/* line 120, style.sass */
+/* line 122, style.sass */
 #featured {
   border: none;
 }
-/* line 122, style.sass */
+/* line 124, style.sass */
 #featured p {
   text-align: left;
   padding: 0 20px;
+  font-size: 20px;
 }
 
-/* line 128, style.sass */
+/* line 131, style.sass */
 .content-image {
   max-width: 50%;
   -webkit-border-radius: 10px;
@@ -154,7 +157,7 @@ p {
   border-radius: 10px;
 }
 @media (max-width: 320px) {
-  /* line 128, style.sass */
+  /* line 131, style.sass */
   .content-image {
     float: none;
     margin: 0 auto;
@@ -162,11 +165,11 @@ p {
   }
 }
 
-/* line 136, style.sass */
+/* line 139, style.sass */
 .gallery .gallery-item {
   margin: 1em;
 }
-/* line 138, style.sass */
+/* line 141, style.sass */
 .gallery .gallery-item img.attachment-thumbnail {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -175,17 +178,17 @@ p {
   border-radius: 5px;
 }
 
-/* line 141, style.sass */
+/* line 144, style.sass */
 #wrapper {
   border: none;
 }
 
-/* line 144, style.sass */
+/* line 147, style.sass */
 #content-full {
   margin-top: 0;
 }
 
-/* line 147, style.sass */
+/* line 150, style.sass */
 .rate-container {
   -webkit-box-shadow: 2px 2px 8px 0 black;
   -moz-box-shadow: 2px 2px 8px 0 black;
@@ -197,7 +200,7 @@ p {
   border-radius: 12px;
   margin-bottom: 2em;
 }
-/* line 151, style.sass */
+/* line 154, style.sass */
 .rate-container h2 {
   background: #32b871;
   color: white;
@@ -210,7 +213,7 @@ p {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 158, style.sass */
+/* line 161, style.sass */
 .ticket-content {
   background: #3b3b3b;
   color: white;
@@ -224,23 +227,23 @@ p {
 }
 
 @media (max-width: 320px) {
-  /* line 172, style.sass */
+  /* line 175, style.sass */
   #container {
     padding: 0;
   }
 
-  /* line 174, style.sass */
+  /* line 177, style.sass */
   #featured p {
     font-size: 18px;
   }
 }
 @media (max-width: 650px) {
-  /* line 178, style.sass */
+  /* line 181, style.sass */
   .hanger {
     display: none;
   }
 
-  /* line 181, style.sass */
+  /* line 184, style.sass */
   .js .main-nav {
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b83253), color-stop(100%, #902741));
     background: -webkit-linear-gradient(#b83253, #902741);
@@ -248,27 +251,27 @@ p {
     background: -o-linear-gradient(#b83253, #902741);
     background: linear-gradient(#b83253, #902741);
   }
-  /* line 185, style.sass */
+  /* line 188, style.sass */
   .js .main-nav .menu .current_page_item a {
     background-color: #d17b91;
     color: white;
   }
-  /* line 188, style.sass */
+  /* line 191, style.sass */
   .js .main-nav .menu .current_page_item a:hover, .js .main-nav .menu .current_page_item a:active {
     background-color: #d17b91 !important;
   }
-  /* line 191, style.sass */
+  /* line 194, style.sass */
   .js .main-nav .menu li a {
     background-color: #efd1d8;
     font-weight: bold;
   }
-  /* line 194, style.sass */
+  /* line 197, style.sass */
   .js .main-nav .menu li a:hover, .js .main-nav .menu li a:active {
     background-color: #d17b91 !important;
   }
 }
 @media (min-width: 651px) {
-  /* line 199, style.sass */
+  /* line 202, style.sass */
   #container {
     margin: 1em;
     -webkit-box-shadow: 0 0 20px 0 black;
@@ -276,21 +279,21 @@ p {
     box-shadow: 0 0 20px 0 black;
   }
 
-  /* line 202, style.sass */
+  /* line 205, style.sass */
   #logo {
     margin: 2em 1em 3em;
   }
-  /* line 204, style.sass */
+  /* line 207, style.sass */
   #logo a {
     font-size: 4em;
   }
 
-  /* line 206, style.sass */
+  /* line 209, style.sass */
   #header {
     padding: 1em;
   }
 
-  /* line 208, style.sass */
+  /* line 211, style.sass */
   .rate-container {
     margin: 0 2% 2em;
     width: 45%;
@@ -304,7 +307,7 @@ p {
   }
 }
 @media (min-width: 980px) {
-  /* line 216, style.sass */
+  /* line 219, style.sass */
   #container {
     margin: 2em auto;
     -webkit-border-radius: 20px;
@@ -317,7 +320,7 @@ p {
     box-shadow: 0 0 20px 0 black;
   }
 
-  /* line 220, style.sass */
+  /* line 223, style.sass */
   #header {
     -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
@@ -326,18 +329,18 @@ p {
     border-radius: 14px;
   }
 
-  /* line 222, style.sass */
+  /* line 225, style.sass */
   .featured-title {
     text-align: left;
   }
 
-  /* line 225, style.sass */
+  /* line 228, style.sass */
   .featured-subtitle {
     text-align: left;
     padding: 0 20px;
   }
 
-  /* line 228, style.sass */
+  /* line 231, style.sass */
   .hanger {
     margin-right: 40px;
   }
